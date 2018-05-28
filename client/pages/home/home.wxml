@@ -1,0 +1,16 @@
+<!--pages/home/home.wxml-->
+<view class="home-wrapper">
+  <view class="basicInfo-wrapper">
+    <image class="user-icon" src="/images/user-icon.png"></image>
+    <view class="user-basic">
+      <view>昵称: Bill</view>
+      <view>点数: 10</view>
+    </view>
+  </view>
+
+  <view class="history-wrapper">
+    <view class="borrowHitory">我的借入</view>
+    <view class="lenHistory">我的借出</view>
+    <view class="pointHistory">点数历史</view>
+  </view>
+</view>

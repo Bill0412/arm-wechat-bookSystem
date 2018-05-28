@@ -1,0 +1,17 @@
+/* pages/home/home.wxss */
+
+.basicInfo-wrapper{
+  display: flex;
+}
+
+.user-icon{
+  width: 200rpx;
+  height: 200rpx;
+  padding-right: 100rpx;
+}
+
+.user-basic{
+  margin-top: 100rpx;
+  bottom: solid grey 2rpx;
+}
+

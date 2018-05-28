@@ -1,0 +1,10 @@
+{
+	"miniprogramRoot": "./client",
+	"qcloudRoot": "./server",
+	"setting": {
+		"newFeature": true
+	},
+	"appid": "wxf89ba8a981f0aeb2",
+	"projectname": "book-wechat-app",
+	"condition": {}
+}

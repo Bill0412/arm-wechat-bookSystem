@@ -1,0 +1,26 @@
+/* pages/library/library.wxss */
+.searchbox{
+  margin-top: 45rpx;
+  margin-bottom: 45rpx;
+  text-align: center;
+}
+
+/* width=20+200+10+500+20rpx*/
+.booklist-wrapper{
+  display: flex;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.booklist-image{
+  padding-right: 10rpx;
+  height: 400rpx;
+  width: 225rpx;
+}
+
+.booklist-text{
+  padding-top: 40rpx;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  width: 500rpx;
+}
