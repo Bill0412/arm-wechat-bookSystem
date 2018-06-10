@@ -32,4 +32,13 @@ router.get('/message', controllers.message.get)
 // POST 用来处理微信转发过来的客服消息
 router.post('/message', controllers.message.post)
 
+// get the available books to withdraw
+router.get('/books', controllers.books.list)
+
+// check if the book is in the available list
+router.get('/books', controllers.deposit.isInBooklist)
+
+// push the deposit info into the database
+router.push('/deposit', controller.deposit.deposit)
+
 module.exports = router

@@ -1,1 +1,14 @@
 /* pages/index/index.wxss */
+.scanBookBarCode{
+  font-weight: bold;
+  text-align: center;
+  margin-top: 400rpx;
+  font-size: 40rpx;
+  color: #555;
+  background-color: yellow;
+  height: 100rpx;
+  padding-top: 30rpx;
+  margin-left: 150rpx;
+  margin-right: 150rpx;
+  border-radius: 20rpx;
+}

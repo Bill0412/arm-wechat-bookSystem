@@ -1,29 +1,10 @@
 <!--pages/library/library.wxml-->
-<view class="searchbox">Search Box</view>
 
 <scroll-view scroll-y>
-  <view class="booklist-wrapper">
-    <image class="booklist-image" src="/images/calculus-one.jpg"></image>
+  <view class='booklist-wrapper' wx:for='{{bookList}}' wx:for-item='book'>
+    <image class="booklist-image" src="{{book.image}}"></image>
     <view class="booklist-text">
-    本书分上、下两册。上册共6章，主要内容有：函数与极限，导数与微分，微分中值定理及导数的应用，不定积分，定积分及其应用，常微分方程；下册共6章，主要内容有：矢量代数与空间解析几何，多元函数微分学，多元函数积分学，第二类曲线积分与第二类曲面积分，级数，含参量积分
-    </view>
-  </view>
-  <view class="booklist-wrapper">
-    <image class="booklist-image" src="/images/calculus-one.jpg"></image>
-    <view class="booklist-text">
-    本书分上、下两册。上册共6章，主要内容有：函数与极限，导数与微分，微分中值定理及导数的应用，不定积分，定积分及其应用，常微分方程；下册共6章，主要内容有：矢量代数与空间解析几何，多元函数微分学，多元函数积分学，第二类曲线积分与第二类曲面积分，级数，含参量积分
-    </view>
-  </view>
-  <view class="booklist-wrapper">
-    <image class="booklist-image" src="/images/calculus-one.jpg"></image>
-    <view class="booklist-text">
-    本书分上、下两册。上册共6章，主要内容有：函数与极限，导数与微分，微分中值定理及导数的应用，不定积分，定积分及其应用，常微分方程；下册共6章，主要内容有：矢量代数与空间解析几何，多元函数微分学，多元函数积分学，第二类曲线积分与第二类曲面积分，级数，含参量积分
-    </view>
-  </view>
-  <view class="booklist-wrapper">
-    <image class="booklist-image" src="/images/calculus-one.jpg"></image>
-    <view class="booklist-text">
-    本书分上、下两册。上册共6章，主要内容有：函数与极限，导数与微分，微分中值定理及导数的应用，不定积分，定积分及其应用，常微分方程；下册共6章，主要内容有：矢量代数与空间解析几何，多元函数微分学，多元函数积分学，第二类曲线积分与第二类曲面积分，级数，含参量积分
+    {{book.description}}
     </view>
   </view>
 </scroll-view>

@@ -1,9 +1,4 @@
 /* pages/library/library.wxss */
-.searchbox{
-  margin-top: 45rpx;
-  margin-bottom: 45rpx;
-  text-align: center;
-}
 
 /* width=20+200+10+500+20rpx*/
 .booklist-wrapper{

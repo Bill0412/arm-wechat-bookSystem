@@ -1,16 +1,30 @@
 <!--pages/home/home.wxml-->
-<view class="home-wrapper">
-  <view class="basicInfo-wrapper">
-    <image class="user-icon" src="/images/user-icon.png"></image>
-    <view class="user-basic">
-      <view>昵称: Bill</view>
-      <view>点数: 10</view>
+<view wx:if="{{!userInfo}}">
+  <view class="unlogin-card">
+    <view class="unlogin-head"></view>
+    <view class="unlogin-info">
+      <view class="unlogin-text">未登录</view>
+      <view class="unlogin-tips">点击微信登录后可方便操作</view>
     </view>
   </view>
+  <view>
+  <button class="unlogin-btn" open-type="getUserInfo" bindgetuserinfo="onTapLogin">微信登录</button>
+  </view>
+</view> 
 
-  <view class="history-wrapper">
-    <view class="borrowHitory">我的借入</view>
-    <view class="lenHistory">我的借出</view>
-    <view class="pointHistory">点数历史</view>
+<view class="user-card" wx:else>
+  <view class="user-info">
+    <image class="user-head" src="{{userInfo.avatarUrl}}"></image>
+    <view class="user-name">欢迎回来，{{userInfo.nickName}}</view>
+  </view>
+  <view class="user-split"></view>
+  <view class="user-options">
+    <view class="option" bindtap="onTapPoints">
+      <view class="option-title">我的积分: {{points}}</view>
+    </view>
+    <view class="option" bindtap="onTapTransaction">
+      <view class="option-title">交易详情</view>
+    </view>
   </view>
 </view>
+

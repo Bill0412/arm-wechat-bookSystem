@@ -6,5 +6,6 @@
 	},
 	"appid": "wxf89ba8a981f0aeb2",
 	"projectname": "book-wechat-app",
+	"compileType": "miniprogram",
 	"condition": {}
 }
